@@ -25,14 +25,17 @@ jobs:
       - name: Build Project
         run: bun run build
 
+      - name: List Build Directory
+        run: ls -R dist # List all files and directories in the 'dist' directory
+
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          name: "github-pages-${{ github.run_id }}" # Unique name using run ID
+          name: "github-pages"
           path: dist
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifact_name: "github-pages-${{ github.run_id }}" # Match the unique name
+          artifact_name: "github-pages"
