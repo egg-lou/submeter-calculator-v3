@@ -8,7 +8,7 @@ export default defineConfig({
   base: "/submeter-calculator-v3/",
   build: {
     outDir: "dist",
-    assetsDir: "assets",
+    assetsDir: "",
   },
   resolve: {
     alias: {

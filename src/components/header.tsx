@@ -5,7 +5,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b-2 border-red-500 flex items-center justify-between bg-transparent px-4 py-1  backdrop-blur md:px-10">
       <div className="flex items-center gap-1">
         <img
-          src="/logo.png"
+          src="submeter-calculator-v3/logo.png"
           alt="Submeter Calculator Logo"
           className="w-12 h-12"
         />
